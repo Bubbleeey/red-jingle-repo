@@ -5,7 +5,7 @@ Fork the repository and we'll get started.
 First, get your Wii rom files ready. This means they'll need to be in the .rvz file format. If you have them in some other format, please convert them.
 
 Then, you're going to need to download the tools `dolphin-tool`, `szs` from szs.wiimm.de and `vgmstream`.
-Once you have these installed, move all your ROMs into one folder. For ease of use, I have created a bash script to easily rip your .wavs! (`extract_jingle.sh` in the Contributing/n3ds directory of the repository.) There is also a .bat script for you Windows users, created by Celthium! (the .bat script in this same place.)
+Once you have these installed, move all your ROMs into one folder. For ease of use, I have created a bash script to easily rip your .wavs! (`extract_jingle.sh` in the Contributing/wii directory of the repository.)
 
 Once you've ripped your jingles from your ROMs, please rename them in a reasonable manner. For example,
 `Punch-Out!!.wav` becomes `punch-out.wav`
