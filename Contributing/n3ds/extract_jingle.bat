@@ -2,8 +2,8 @@
 setlocal disabledelayedexpansion
 
 :: --- CONFIGURATION ---
-set "TOOL_3DS=3DS Tool\3dstool.exe"
-set "VGM=vgmstream\vgmstream-cli.exe"
+set "TOOL_3DS=%~dp0tools\windows\3dstool.exe"
+set "VGM=%~dp0tools\windows\vgmstream-cli.exe"
 
 echo -------------------------------------------------------
 echo 3DS Banner Jingle Extractor (Batch Mode)
@@ -14,16 +14,24 @@ if not exist "%~dp0_sanitize.py" (
     pause
     exit /b 1
 )
+if not exist "%~dp0tools\windows\3dstool.exe" (
+    echo [Error] 3dstool.exe not found. Expected at: tools\windows\3dstool.exe
+    pause
+    exit /b 1
+)
+if not exist "%~dp0tools\windows\vgmstream-cli.exe" (
+    echo [Error] vgmstream-cli.exe not found. Expected at: tools\windows\vgmstream-cli.exe
+    pause
+    exit /b 1
+)
 
 :: Resolve paths relative to the script location (Contributing\n3ds\)
 :: The repo root is two levels up.
-set "SCRIPT_DIR=%~dp0"
-:: Strip trailing backslash
-if "%SCRIPT_DIR:~-1%"=="\" set "SCRIPT_DIR=%SCRIPT_DIR:~0,-1%"
-
-:: Navigate two levels up to repo root
-for %%A in ("%SCRIPT_DIR%\..") do set "CONTRIB_DIR=%%~fA"
-for %%A in ("%CONTRIB_DIR%\..") do set "REPO_ROOT=%%~fA"
+pushd "%~dp0"
+set "SCRIPT_DIR=%CD%"
+cd ..\..
+set "REPO_ROOT=%CD%"
+popd
 
 set "JINGLES_DIR=%REPO_ROOT%\jingles\n3ds"
 set "INDEX_JSON=%REPO_ROOT%\index.json"
@@ -32,7 +40,7 @@ set "GAMES_DIR=%SCRIPT_DIR%\games"
 if not exist "%JINGLES_DIR%" mkdir "%JINGLES_DIR%"
 if not exist "%GAMES_DIR%" mkdir "%GAMES_DIR%"
 
-for %%f in ("%GAMES_DIR%\*.3ds" "%GAMES_DIR%\*.cci") do (
+for %%f in ("%GAMES_DIR%\*.3ds" "%GAMES_DIR%\*.cci" "%GAMES_DIR%\*.app" "%GAMES_DIR%\*.cia" "%GAMES_DIR%\*.z3ds" "%GAMES_DIR%\*.zcci") do (
     echo [Processing] %%~nxf...
 
     "%TOOL_3DS%" -xvtf cci "%%f" -0 partition0.cxi >nul 2>&1
@@ -47,22 +55,7 @@ for %%f in ("%GAMES_DIR%\*.3ds" "%GAMES_DIR%\*.cci") do (
 
         echo %%~nf> "%SCRIPT_DIR%\_name.txt"
 
-        :: Enable delayed expansion only for the section that needs it
-        setlocal enabledelayedexpansion
-
-        :: Get sanitized filename (slug) from _sanitize.py
-        for /f "delims=" %%s in ('python "%~dp0_sanitize.py"') do set "FINAL=%%s"
-
-        :: Get human-readable game title from _game_title.py
-        for /f "delims=" %%t in ('python "%~dp0_game_title.py"') do set "GAME_TITLE=%%t"
-
-        "%VGM%" banner_dir\banner.bcwav -o "!JINGLES_DIR!\!FINAL!" >nul 2>&1
-        echo [Success] Saved as: !FINAL! (Game: !GAME_TITLE!)
-
-        :: Update index.json
-        python "%~dp0_update_index.py" "!INDEX_JSON!" "!GAME_TITLE!" "jingles/n3ds/!FINAL!"
-
-        endlocal
+        call :process_banner
 
     ) else (
         echo [Error] No banner found in %%f
@@ -81,3 +74,18 @@ if exist "%SCRIPT_DIR%\_name.txt" del "%SCRIPT_DIR%\_name.txt"
 
 echo Extraction Complete!
 pause
+goto :eof
+
+:process_banner
+setlocal enabledelayedexpansion
+
+for /f "delims=" %%s in ('python "%~dp0_sanitize.py"') do set "FINAL=%%s"
+for /f "delims=" %%t in ('python "%~dp0_game_title.py"') do set "GAME_TITLE=%%t"
+
+"%VGM%" banner_dir\banner.bcwav -o "!JINGLES_DIR!\!FINAL!" >nul 2>&1
+echo [Success] Saved as: !FINAL! (Game: !GAME_TITLE!)
+
+python "%~dp0_update_index.py" "!INDEX_JSON!" "!GAME_TITLE!" "jingles/n3ds/!FINAL!"
+
+endlocal
+goto :eof
