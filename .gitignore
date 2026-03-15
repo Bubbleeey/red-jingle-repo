@@ -5,3 +5,5 @@
 *.app
 *.z3ds
 *.zcci
+tools/windows/ext_key.txt
+
