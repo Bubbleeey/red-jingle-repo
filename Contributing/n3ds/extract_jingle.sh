@@ -8,11 +8,11 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 case "$(uname)" in
     Darwin)
         TOOL_3DS="$SCRIPT_DIR/tools/macos/3dstool"
-        VGM="$SCRIPT_DIR/tools/macos/vgmstream-cli"
+        VGM="$SCRIPT_DIR/../tools/macos/vgmstream-cli"
         ;;
     Linux)
         TOOL_3DS="$SCRIPT_DIR/tools/linux/3dstool"
-        VGM="$SCRIPT_DIR/tools/linux/vgmstream-cli"
+        VGM="$SCRIPT_DIR/../tools/linux/vgmstream-cli"
         ;;
     *)
         echo "Unsupported OS: $(uname). Only Linux and macOS are supported."

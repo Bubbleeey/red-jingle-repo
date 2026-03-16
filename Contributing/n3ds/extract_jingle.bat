@@ -3,7 +3,7 @@ setlocal disabledelayedexpansion
 
 :: --- CONFIGURATION ---
 set "TOOL_3DS=%~dp0tools\windows\3dstool.exe"
-set "VGM=%~dp0tools\windows\vgmstream-cli.exe"
+set "VGM=%~dp0..\tools\windows\vgmstream-cli.exe"
 
 echo -------------------------------------------------------
 echo 3DS Banner Jingle Extractor (Batch Mode)
@@ -15,12 +15,12 @@ if not exist "%~dp0_sanitize.py" (
     exit /b 1
 )
 if not exist "%~dp0tools\windows\3dstool.exe" (
-    echo [Error] 3dstool.exe not found. Expected at: tools\windows\3dstool.exe
+    echo [Error] 3dstool.exe not found. Expected at: Contributing\n3ds\tools\windows\3dstool.exe
     pause
     exit /b 1
 )
-if not exist "%~dp0tools\windows\vgmstream-cli.exe" (
-    echo [Error] vgmstream-cli.exe not found. Expected at: tools\windows\vgmstream-cli.exe
+if not exist "%~dp0..\tools\windows\vgmstream-cli.exe" (
+    echo [Error] vgmstream-cli.exe not found. Expected at: Contributing\tools\windows\vgmstream-cli.exe
     pause
     exit /b 1
 )
