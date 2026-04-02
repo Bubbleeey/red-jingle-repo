@@ -658,6 +658,14 @@
       "file": "jingles/wii/nights-journey-of-dreams.wav"
     },
     {
+      "name": "No More Heroes 2 - Desperate Struggle",
+      "file": "jingles/wii/no-more-heroes-2-desperate-struggle.wav"
+    },
+    {
+      "name": "Pandora's Tower",
+      "file": "jingles/wii/pandoras-tower.wav"
+    },
+    {
       "name": "Pokémon Battle Revolution",
       "file": "jingles/wii/pokemon-battle-revolution.wav"
     },
@@ -666,8 +674,32 @@
       "file": "jingles/wii/punch-out.wav"
     },
     {
+      "name": "Puyo Puyo Puyopuyo 20th Anniversary",
+      "file": "jingles/wii/puyo-puyo-puyopuyo-20th-anniversary.wav"
+    },
+    {
+      "name": "Rayman Origins",
+      "file": "jingles/wii/rayman-origins.wav"
+    },
+    {
+      "name": "Resident Evil Archives - Resident Evil",
+      "file": "jingles/wii/resident-evil-archives-resident-evil.wav"
+    },
+    {
+      "name": "Resident Evil Archives - Resident Evil Zero",
+      "file": "jingles/wii/resident-evil-archives-resident-evil-zero.wav"
+    },
+    {
       "name": "Rhythm Heaven Fever",
       "file": "jingles/wii/rhythm-heaven-fever.wav"
+    },
+    {
+      "name": "Samurai Warriors 3",
+      "file": "jingles/wii/samurai-warriors-3.wav"
+    },
+    {
+      "name": "Sonic Colors",
+      "file": "jingles/wii/sonic-colors.wav"
     },
     {
       "name": "SpongeBob's Truth or Square",
@@ -684,6 +716,22 @@
     {
       "name": "Super Paper Mario",
       "file": "jingles/wii/super-paper-mario.wav"
+    },
+    {
+      "name": "Super Smash Bros. Brawl",
+      "file": "jingles/wii/super-smash-bros-brawl.wav"
+    },
+    {
+      "name": "Tatsunoko vs. Capcom - Ultimate All-Stars",
+      "file": "jingles/wii/tatsunoko-vs-capcom-ultimate-all-stars.wav"
+    },
+    {
+      "name": "TrackMania - Build to Race",
+      "file": "jingles/wii/trackmania-build-to-race.wav"
+    },
+    {
+      "name": "Xenoblade Chronicles",
+      "file": "jingles/wii/xenoblade-chronicles.wav"
     }
   ],
   "wiiu": [
