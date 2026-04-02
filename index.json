@@ -16,12 +16,28 @@
       "file": "jingles/n3ds/alliance-alive-the.wav"
     },
     {
+      "name": "Angry Birds Star Wars",
+      "file": "jingles/n3ds/angry-birds-star-wars.wav"
+    },
+    {
+      "name": "Angry Birds Trilogy",
+      "file": "jingles/n3ds/angry-birds-trilogy.wav"
+    },
+    {
       "name": "Animal Crossing - New Leaf",
       "file": "jingles/n3ds/animal-crossing-new-leaf.wav"
     },
     {
+      "name": "Asphalt 3D",
+      "file": "jingles/n3ds/asphalt-3d.wav"
+    },
+    {
       "name": "Batman - Arkham Origins Blackgate",
       "file": "jingles/n3ds/batman-arkham-origins-blackgate.wav"
+    },
+    {
+      "name": "Bit.Trip Saga",
+      "file": "jingles/n3ds/bittrip-saga.wav"
     },
     {
       "name": "BOXBOY!",
@@ -40,8 +56,20 @@
       "file": "jingles/n3ds/captain-toad-treasure-tracker.wav"
     },
     {
+      "name": "Cars 2",
+      "file": "jingles/n3ds/cars-2.wav"
+    },
+    {
       "name": "Castlevania - Lords of Shadow - Mirror of Fate",
       "file": "jingles/n3ds/castlevania-lords-of-shadow-mirror-of-fate.wav"
+    },
+    {
+      "name": "Cave Story 3D",
+      "file": "jingles/n3ds/cave-story-3d.wav"
+    },
+    {
+      "name": "Chibi-Robo Zip Lash",
+      "file": "jingles/n3ds/chibi-robo-zip-lash.wav"
     },
     {
       "name": "Code Name - S.T.E.A.M.",
@@ -52,6 +80,10 @@
       "file": "jingles/n3ds/cooking-mama-sweet-shop.wav"
     },
     {
+      "name": "Cooking Mama 4 - Kitchen Magic",
+      "file": "jingles/n3ds/cooking-mama-4-kitchen-magic.wav"
+    },
+    {
       "name": "Cooking Mama 5 - Bon Appetit",
       "file": "jingles/n3ds/cooking-mama-5-bon-appetit.wav"
     },
@@ -60,12 +92,24 @@
       "file": "jingles/n3ds/culdcept-revolt.wav"
     },
     {
+      "name": "Dead or Alive - Dimensions",
+      "file": "jingles/n3ds/dead-or-alive-dimensions.wav"
+    },
+    {
       "name": "Detective Pikachu",
       "file": "jingles/n3ds/detective-pikachu.wav"
     },
     {
       "name": "Dillon's Dead-Heat Breakers",
       "file": "jingles/n3ds/dillons-dead-heat-breakers.wav"
+    },
+    {
+      "name": "Donkey Kong Country Returns 3D",
+      "file": "jingles/n3ds/donkey-kong-country-returns-3d.wav"
+    },
+    {
+      "name": "Doodle Jump Adventures",
+      "file": "jingles/n3ds/doodle-jump-adventures.wav"
     },
     {
       "name": "Dragon Ball Fusions",
@@ -124,6 +168,14 @@
       "file": "jingles/n3ds/fantasy-life.wav"
     },
     {
+      "name": "Fast & Furious - Showdown",
+      "file": "jingles/n3ds/fast-furious-showdown.wav"
+    },
+    {
+      "name": "Final Fantasy Explorers",
+      "file": "jingles/n3ds/final-fantasy-explorers.wav"
+    },
+    {
       "name": "Fire Emblem - Awakening",
       "file": "jingles/n3ds/fire-emblem-awakening.wav"
     },
@@ -140,12 +192,24 @@
       "file": "jingles/n3ds/fossil-fighters-frontier.wav"
     },
     {
+      "name": "Garfield Kart",
+      "file": "jingles/n3ds/garfield-kart.wav"
+    },
+    {
       "name": "Hatsune Miku - Project Mirai DX",
       "file": "jingles/n3ds/hatsune-miku-project-mirai-dx.wav"
     },
     {
       "name": "Hey! Pikmin",
       "file": "jingles/n3ds/hey-pikmin.wav"
+    },
+    {
+      "name": "Hot Wheels - World's Best Driver",
+      "file": "jingles/n3ds/hot-wheels-worlds-best-driver.wav"
+    },
+    {
+      "name": "Hyrule Warriors Legends",
+      "file": "jingles/n3ds/hyrule-warriors-legends.wav"
     },
     {
       "name": "Inazuma Eleven 3 - Team Ogre Attacks",
@@ -174,6 +238,10 @@
     {
       "name": "Kirby - Triple Deluxe",
       "file": "jingles/n3ds/kirby-triple-deluxe.wav"
+    },
+    {
+      "name": "Kirby Battle Royale",
+      "file": "jingles/n3ds/kirby-battle-royale.wav"
     },
     {
       "name": "Kirby's Extra Epic Yarn",
@@ -224,8 +292,32 @@
       "file": "jingles/n3ds/mario-luigi-superstar-saga-bowsers-minions.wav"
     },
     {
+      "name": "Mario & Sonic at the London 2012 Olympic Games",
+      "file": "jingles/n3ds/mario-sonic-at-the-london-2012-olympic-games.wav"
+    },
+    {
+      "name": "Mario & Sonic at the Rio 2016 Olympic Games",
+      "file": "jingles/n3ds/mario-sonic-at-the-rio-2016-olympic-games.wav"
+    },
+    {
+      "name": "Mario Golf - World Tour",
+      "file": "jingles/n3ds/mario-golf-world-tour.wav"
+    },
+    {
       "name": "Mario Kart 7",
       "file": "jingles/n3ds/mario-kart-7.wav"
+    },
+    {
+      "name": "Mario Party - Island Tour",
+      "file": "jingles/n3ds/mario-party-island-tour.wav"
+    },
+    {
+      "name": "Mario Party - Star Rush",
+      "file": "jingles/n3ds/mario-party-star-rush.wav"
+    },
+    {
+      "name": "Mario Sports Superstars",
+      "file": "jingles/n3ds/mario-sports-superstars.wav"
     },
     {
       "name": "Metal Gear Solid 3D - Snake Eater",
@@ -236,8 +328,20 @@
       "file": "jingles/n3ds/metroid-samus-returns.wav"
     },
     {
+      "name": "Metroid Prime - Federation Force",
+      "file": "jingles/n3ds/metroid-prime-federation-force.wav"
+    },
+    {
+      "name": "Miitopia",
+      "file": "jingles/n3ds/miitopia.wav"
+    },
+    {
       "name": "Minecraft - New Nintendo 3DS Edition",
       "file": "jingles/n3ds/minecraft-new-nintendo-3ds-edition.wav"
+    },
+    {
+      "name": "Need for Speed - The Run",
+      "file": "jingles/n3ds/need-for-speed-the-run.wav"
     },
     {
       "name": "New Super Mario Bros. 2",
@@ -280,6 +384,14 @@
       "file": "jingles/n3ds/pokemon-omega-ruby.wav"
     },
     {
+      "name": "Pokemon Rumble Blast",
+      "file": "jingles/n3ds/pokemon-rumble-blast.wav"
+    },
+    {
+      "name": "Pokemon Rumble World",
+      "file": "jingles/n3ds/pokemon-rumble-world.wav"
+    },
+    {
       "name": "Pokemon Sun",
       "file": "jingles/n3ds/pokemon-sun.wav"
     },
@@ -290,6 +402,10 @@
     {
       "name": "Pokemon Ultra Moon",
       "file": "jingles/n3ds/pokemon-ultra-moon.wav"
+    },
+    {
+      "name": "Pokemon Ultra Sun",
+      "file": "jingles/n3ds/pokemon-ultra-sun.wav"
     },
     {
       "name": "Pokemon X",
@@ -364,6 +480,22 @@
       "file": "jingles/n3ds/shovel-knight-treasure-trove.wav"
     },
     {
+      "name": "Sims 3, The",
+      "file": "jingles/n3ds/sims-3-the.wav"
+    },
+    {
+      "name": "Sims 3, The - Pets",
+      "file": "jingles/n3ds/sims-3-the-pets.wav"
+    },
+    {
+      "name": "Sonic & All-Stars Racing Transformed",
+      "file": "jingles/n3ds/sonic-all-stars-racing-transformed.wav"
+    },
+    {
+      "name": "Sonic Lost World",
+      "file": "jingles/n3ds/sonic-lost-world.wav"
+    },
+    {
       "name": "Star Fox 64 3D",
       "file": "jingles/n3ds/star-fox-64-3d.wav"
     },
@@ -382,6 +514,10 @@
     {
       "name": "Super Mario Maker for Nintendo 3DS",
       "file": "jingles/n3ds/super-mario-maker-for-nintendo-3ds.wav"
+    },
+    {
+      "name": "Super Monkey Ball 3D",
+      "file": "jingles/n3ds/super-monkey-ball-3d.wav"
     },
     {
       "name": "Sushi Striker - The Way of Sushido",
